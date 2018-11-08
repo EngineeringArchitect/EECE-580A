@@ -1,9 +1,9 @@
-Cyber Physical Systems Research Project
+Cyber Physical Systems Research Project - Colonel Blotto Games
 
-Thesis:
+Thesis: Pending
 
-Supporting Papers:
+Supporting Papers: Pending
 
-Reason for Research:
+Reason for Research: Pending
 
-Status of Report:
+Status of Report: Pending
