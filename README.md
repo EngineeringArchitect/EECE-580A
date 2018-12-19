@@ -23,7 +23,3 @@ Here is another link to a more comprehensive paper on [Colonel Blotto Games](htt
 Reason for Research: Pending
 
 Status of Report: Pending
-
-
-        (EECE-580A/NERCCS_2018_paper_49.pdf)
-      
