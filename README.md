@@ -10,7 +10,7 @@ In this version there are a series of physical nodes and cyber nodes. The physic
 In the given files, they each aids in the calculation of CBG analysis.
 
 ### Gamebuild
-File(EECE-580A/Gamebuild.m)
+[File](EECE-580A/Gamebuild.m)
 ### npg2
 
 ### resourcecombos
