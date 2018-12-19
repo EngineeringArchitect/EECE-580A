@@ -5,8 +5,15 @@ Colonel Blotto Games is a type of zero-sum game where the players, usually calle
 
 In this version there are a series of physical nodes and cyber nodes. The physical nodes are connected through the cyber nodes. The user can only access the physical nodes through the cyber nodes. Each physical node is connected to either 1 or more cyber nodes. If the attacker to the networked system manages to take down one of the cyber nodes then all the physical nodes attached to it are knocked out.
 
+## How the files work
+### ChangingresourceMain
 In the given files, they each aids in the calculation of CBG analysis.
 
+### Gamebuild
+File(EECE-580A/Gamebuild.m)
+### npg2
+
+### resourcecombos
 In this project the CBG is the network such as the 
 The goal of this project is to improve the current Colonel Blotto games MATLAB files
 
