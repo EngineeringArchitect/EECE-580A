@@ -1,6 +1,6 @@
-Cyber Physical Systems Research Project - Colonel Blotto Games
+# Cyber Physical Systems Research Project - Colonel Blotto Games
 
-Colonel Blotto Games
+## Colonel Blotto Games
 
 The goal of this project is to improe the current Colonel Blotto games MATLAB files
 
