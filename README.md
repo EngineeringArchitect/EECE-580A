@@ -17,7 +17,7 @@ The changes and analyses I intend to make:
 4. How does the equilibrium change the cost values? How does the equilibrium change?
 
 Supporting Papers:
-This is the link to a basic paper on [Colonel Blotto](EECE-580A/NERCCS_2018_paper_49.pdf)
+This is the link to a basic paper on [Colonel Blotto](root/EECE-580A/NERCCS_2018_paper_49.pdf)
 Here is another link to a more comprehensive paper on [Colonel Blotto Games](https://arxiv.org/pdf/1610.02110.pdf).
 
 Reason for Research: Pending
