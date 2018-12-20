@@ -17,7 +17,7 @@ At this link you can download the [file](Gamebuild.m). This source code has inpu
 - Cost = Cost/payoff of each physical node to each player
 - V = Number of cyber nodes needed for attacker to bring down a physical node
 
-What this file does is it iterates through each strategy set and compares the combined resources of the attacker to the resources of the defender. From there it determines the winner of each cyber node and uses the A and V inputs to determine if any physical nodes are down. The output of the code is a payoff matrix for each player from the cost input and the the nodes that are down.
+What this file does is it iterates through each strategy set and compares the combined resources of the attacker to the resources of the defender. From there it determines the winner of each cyber node and uses the A and V inputs to determine if any physical nodes are down. The output of the code is a payoff matrix for each player from the cost input and the nodes that are down.
 
 ### npg2.m
 At this link you can download the [file](npg2.m). This source code has inputs:
