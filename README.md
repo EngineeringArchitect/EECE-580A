@@ -16,18 +16,21 @@ At this link you can download the [file](Gamebuild.m). This source code has inpu
 - A = connection matrix to physical nodes
 - Cost = Cost/payoff of each physical node to each player
 - V = Number of cyber nodes needed for attacker to bring down a physical node
+
 What this file does is it iterates through each strategy set and compares the combined resources of the attacker to the resources of the defender. From there it determines the wineer of each cyber node and uses the A and V inputs to determine if any physical nodes are down. The output of the code is a payoff matrix for each player from the cost input and the the nodes that are down.
 
 ### npg2.m
 At this link you can download the [file](npg2.m). This source code has inputs:
 - M:length of each strategy set
 - U: payoff matrices
+
 This code determines the Nash Equilibrium of the game from teh given payoff matrices. The possible downside to this program is it only returns one possible Nash Equilibrium in a given game even if the game may have more than one.
 
 ### resourcecombos.m
 At this link you can download the [file](resourcecombos.m). This source code has inputs:
 - na: number of cyber nodes
 - x: number of player resources
+
 As well as a 2 by na matrix that controls how the CBG system is networked. This program determines which resource values are needed based on the number of resources the player has. It then distributes those resources over the cyber nodes and returns distribution matrices in valve CA for each player.
 
 ## The Intended Changes 
