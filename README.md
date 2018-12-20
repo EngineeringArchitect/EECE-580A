@@ -101,5 +101,5 @@ c = reshape(cell2mat(SortDate(index, 5)), size(index));
 
 The above process was taken from: [here](https://www.mathworks.com/matlabcentral/answers/352068-replacing-the-for-loop-please).
 
-The fix I see to this was possiblily needing to pull some of these loops apart without taking away from the calculations purpose for those set of loops. The option for using another programing langange is also feasible but, for an any internal functions that were used in MATLAB you would either need to find a comparable function in that language or write your own. Due to the limited time I wasn't able to complete much in the transforming the MATLAB code to matrix operations. I
+The fix I see to this was possibly needing to pull some of these loops apart without taking away from the calculations purpose for those set of loops. The option for using another programing langange is also feasible but, for an any internal functions that were used in MATLAB you would either need to find a comparable function in that language or write your own.
 
