@@ -44,7 +44,13 @@ Here is another link to a more comprehensive paper on [Colonel Blotto Games](htt
 For a more general understanding of Colonel Blotto Games and how they work [wikipedia](https://en.wikipedia.org/wiki/Blotto_game) also has a good description.
 
 ## Current Progress
-The current timing of the original files is . In order to reduce the amount of time it takes the program loops either need to be replaced with matrix calculations or find some other way to do the calculations. I have located the gamer.m function that the original user used in his program to do the Nash Equilibrium calculations.
+In order to see how the current functions perform, I used the tic and toc functions of MATLAB. The way they work is as follows, you place the key word tic at the start of where you want to start timing your program. THis startst the internal timer. Then, place the key word toc where you wish to stop timing your program. It will output a result, in seconds, of how much time it took to run the program. A
+
+After testing this functionality a few times, and seeing the results varied each time, I decided to get the best result was to take an average of 10 runs of the program. The average run time of the files is 95.7859 seconds.
+
+In order to reduce the amount of time it takes the program loops either need to be replaced with matrix calculations or find some other way to do the calculations. I have located the [gamer.m](gamer.m) function that the original user used in his program to do the Nash Equilibrium calculations in order to run these locations since in it not part of the MATLAB library.
+
+
 
 
 
