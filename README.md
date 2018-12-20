@@ -52,8 +52,20 @@ In order to reduce the amount of time it takes the program loops either need to 
 
 The best way I have found that to remove the loops from the files is to change them to matrix operations. The only downside to this is that depending on the complexity of the operations being done in the loop is how feasible it is. In order to remove all the loops you will need to preallocate the space for each matrix instead of just looping over all the dimensions. This may cause an issue on some computers if that person doesn't have enough space. The other issue is some of the calculations over each individual element of the array may be producing a varying sized matrix value as well. This will result multidimensional arrays that may dbe hard to utilize later for whatever calculation purpose the program needs it for. It will also produce an error that will say something around the incorrect matrix dimensions if you didn't allocate space for the right size matrix. The other issue with replaceing the moops with matrices is that many of them are there to use "if-then-else" statements on each element of the matrix it is looping over then produce some form of value after that. Currently, I am a bit wary of how replacing the loops will affect these statments. What could be done is to havethe code create the second to last matrix then only have have the one loop for whatever purpose it is needed for, this truly depending on each file of code.
 
-The proess for removing loops from MATLAB code for a basic double nested loop is listed in the following steps:
+The proess for removing loops from MATLAB code for a basic double nested loop is listed in the following steps with images:
+This is the initial loop
+```
+L=(length(time)-1);
+ for q=1:numPT
+    for  h=1:L
+    x(q,h)=SortDate{q+numPT*(h-1),6};
+    y(q,h)=SortDate{q+numPT*(h-1),7};
+    c(q,h)=SortDate{q+numPT*(h-1),5};
+    end
+end
+```
 1. Pre-allocate the output of the final matrix, meaning filling the predetermined output matrix with zeros as place holders.
+2. You change the column vector position of every place youa re comparaing to 
 
 The fix I see to this was possiblily needing to pull some of these loops apart without taking away from the calculations purpose for those set of loops. The option for using another programing langange is also feasible but, for an any internal functions that were used in MATLAB you would either need to find a comparable function in that language or write your own. Due to the limited time I wasn't able to complete much in the transforming the MATLAB code to matrix operations. I
 
