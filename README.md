@@ -24,7 +24,7 @@ At this link you can download the [file](npg2.m). This source code has inputs:
 - M: length of each strategy set
 - U: payoff matrices
 
-This code determines the Nash Equilibrium of the game from teh given payoff matrices. The possible downside to this program is it only returns one possible Nash Equilibrium in a given game even if the game may have more than one.
+This code determines the Nash Equilibrium of the game from the given payoff matrices. The possible downside to this program is it only returns one possible Nash Equilibrium in a given game even if the game may have more than one.
 
 ### resourcecombos.m
 At this link you can download the [file](resourcecombos.m). This source code has inputs:
