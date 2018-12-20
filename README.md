@@ -11,17 +11,17 @@ At this link you can download the [file](ChangingresourceMain.m). In this source
 
 ### Gamebuild.m
 At this link you can download the [file](Gamebuild.m). This source code has inputs:
-- na = number of cyber nodes
-- CA = resource distribution matrices
-- A = connection matrix to physical nodes
-- Cost = Cost/payoff of each physical node to each player
-- V = Number of cyber nodes needed for attacker to bring down a physical node
+- na: number of cyber nodes
+- CA: resource distribution matrices
+- A: connection matrix to physical nodes
+- Cost: Cost/payoff of each physical node to each player
+- V: Number of cyber nodes needed for attacker to bring down a physical node
 
 What this file does is it iterates through each strategy set and compares the combined resources of the attacker to the resources of the defender. From there it determines the winner of each cyber node and uses the A and V inputs to determine if any physical nodes are down. The output of the code is a payoff matrix for each player from the cost input and the nodes that are down.
 
 ### npg2.m
 At this link you can download the [file](npg2.m). This source code has inputs:
-- M:length of each strategy set
+- M: length of each strategy set
 - U: payoff matrices
 
 This code determines the Nash Equilibrium of the game from teh given payoff matrices. The possible downside to this program is it only returns one possible Nash Equilibrium in a given game even if the game may have more than one.
