@@ -65,7 +65,41 @@ L=(length(time)-1);
 end
 ```
 1. Pre-allocate the output of the final matrix, meaning filling the predetermined output matrix with zeros as place holders.
-2. You change the column vector position of every place youa re comparaing to 
+```
+L = (length(time)-1);
+x = zeros(numPT, L);
+y = zeros(numPT, L);
+c = zeros(numPT, L);
+for q = 1:numPT
+  for h=1:L
+    x(q,h) = SortDate{q+numPT*(h-1),6};
+    y(q,h) = SortDate{q+numPT*(h-1),7};
+    c(q,h) = SortDate{q+numPT*(h-1),5};
+  end
+end
+```
+2. Next removing the inner loop. You change the column vector position of every place youa are comparaing to.
+```
+L = (length(time)-1);
+x = zeros(numPT, L);
+y = zeros(numPT, L);
+c = zeros(numPT, L);
+for q = 1:numPT
+  x(q, :) = [SortDate{q+numPT*(0:L-1), 6}];  % Faster than: x(q, 1:L) = ...
+  y(q, :) = [SortDate{q+numPT*(0:L-1), 7}];
+  c(q, :) = [SortDate{q+numPT*(0:L-1), 5}];
+end
+```
+3. Removing the outer loop is similar to the inner loop. Once you remove that, you no longer need to have the pre-allocation.
+```
+L = (length(time)-1);
+index = (1:numPT).' + (0:numPT:numPT*(L-1)));  % >= R2016b
+x = reshape(cell2mat(SortDate(index, 6)), size(index));
+y = reshape(cell2mat(SortDate(index, 7)), size(index));
+c = reshape(cell2mat(SortDate(index, 5)), size(index));
+```
+
+The above process was taken from: [here](https://www.mathworks.com/matlabcentral/answers/352068-replacing-the-for-loop-please).
 
 The fix I see to this was possiblily needing to pull some of these loops apart without taking away from the calculations purpose for those set of loops. The option for using another programing langange is also feasible but, for an any internal functions that were used in MATLAB you would either need to find a comparable function in that language or write your own. Due to the limited time I wasn't able to complete much in the transforming the MATLAB code to matrix operations. I
 
