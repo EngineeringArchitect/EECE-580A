@@ -7,7 +7,7 @@ In this version there are a series of physical nodes and cyber nodes. The physic
 
 ## How the files work
 ### ChangingresourceMain.m
-At this link you can download the [file](ChangingresourceMain.m). In this source code, it defines the input parameters for the other 3 function programs. It initially calls resourcecombos.m to create resource distribution matrices. Then, it calls the Gamebuild.m to build the payoff matrix from the resources distribution matrices and other input parameters. Next, the npg2.m file is called to solve the Nash Equilibrium of the givengame parameters based on the payoff matrices. The output of the ChangingresourceMain.m file is a graph of defender resources vs. the value of teh game.
+At this link you can download the [file](ChangingresourceMain.m). In this source code, it defines the input parameters for the other 3 function programs. It initially calls resourcecombos.m to create resource distribution matrices. Then, it calls the Gamebuild.m to build the payoff matrix from the resources distribution matrices and other input parameters. Next, the npg2.m file is called to solve the Nash Equilibrium of the givengame parameters based on the payoff matrices. The output of the ChangingresourceMain.m file is a graph of defender resources vs. the value of the game.
 
 ### Gamebuild.m
 At this link you can download the [file](Gamebuild.m). This source code has inputs:
